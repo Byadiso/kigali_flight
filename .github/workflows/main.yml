@@ -1,8 +1,12 @@
 name: Rwanda Flight Tracker
 
 on:
+  # Runs on every push to the main branch
+  push:
+    branches:
+      - master
+  # Runs every 30 minutes, 24/7
   schedule:
-    # Runs every 30 minutes, 24/7
     - cron: '*/30 * * * *'
   # Allows you to click a button in GitHub to run it manually for testing
   workflow_dispatch:
@@ -25,6 +29,8 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install --upgrade pip
+          # Note: We are using 'requests' in our tracker.py, 
+          # so we ensure both are available.
           pip install duffel_api requests
 
       - name: Run Python Tracker
