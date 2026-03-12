@@ -74,4 +74,5 @@ The tracker runs automatically:
 ## Author
 
 **BYAMUNGU Desire**
+
 Flight Search Automation Project – 2026
