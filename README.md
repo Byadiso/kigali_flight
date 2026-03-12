@@ -1,13 +1,13 @@
 
 
-# ✈️ Rwanda Flight Price Tracker
+# Rwanda Flight Price Tracker
 ![Flight Tracker Status](https://github.com/Byadiso/kigali_flight/actions/workflows/main.yml/badge.svg)
 
 An automated flight price monitor that scans for the cheapest travel deals between **Poland/Germany** and **Kigali, Rwanda (KGL)**. The bot performs calculations to find the absolute cheapest date combinations and sends alerts directly to Telegram.
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
 1. **Scans Multiple Dates** – Checks a range of departure and return dates for **July/August 2026**.
 2. **Optimizes Prices** – Compares all possible date combinations to find the **cheapest option**.
@@ -17,7 +17,7 @@ An automated flight price monitor that scans for the cheapest travel deals betwe
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python 3.10** – Core logic and API interaction  
 - **Duffel API** – Live flight data source  
@@ -26,7 +26,7 @@ An automated flight price monitor that scans for the cheapest travel deals betwe
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### 1. Secrets Configuration
 
@@ -54,7 +54,7 @@ CHAT_ID=your_id
 
 ---
 
-## 📅 Tracking Schedule
+## Tracking Schedule
 
 The tracker runs automatically:
 
@@ -64,14 +64,14 @@ The tracker runs automatically:
 
 ---
 
-## ⚠️ Important Note on Costs
+## Important Note on Costs
 
 * **Searching is Free:** The Duffel API does not charge for searching flight offers.
 * **GitHub Actions:** The workflow stays within the **2,000 free minutes per month** available for GitHub Free accounts.
 
 ---
 
-## 👤 Author
+## Author
 
 **BYAMUNGU Desire**
 Flight Search Automation Project – 2026
