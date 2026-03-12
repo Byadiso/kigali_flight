@@ -1,0 +1,3 @@
+duffel_api
+requests
+python-dotenv

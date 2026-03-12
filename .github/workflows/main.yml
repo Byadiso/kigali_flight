@@ -1,0 +1,36 @@
+name: Rwanda Flight Tracker
+
+on:
+  schedule:
+    # Runs every 30 minutes, 24/7
+    - cron: '*/30 * * * *'
+  # Allows you to click a button in GitHub to run it manually for testing
+  workflow_dispatch:
+
+jobs:
+  run-tracker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          # This caches dependencies so the run is faster
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install duffel_api requests
+
+      - name: Run Python Tracker
+        # These link your GitHub Secrets to the Python script
+        env:
+          DUFFEL_TOKEN: ${{ secrets.DUFFEL_TOKEN }}
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: python tracker.py
