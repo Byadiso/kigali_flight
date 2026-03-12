@@ -1,5 +1,5 @@
 
-````markdown
+
 # ✈️ Rwanda Flight Price Tracker
 ![Flight Tracker Status](https://github.com/Byadiso/kigali_flight/actions/workflows/main.yml/badge.svg)
 
