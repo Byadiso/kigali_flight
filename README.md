@@ -1,4 +1,5 @@
 # ✈️ Rwanda Flight Price Tracker
+![Flight Tracker Status](https://github.com/Byadiso/kigali_flight/actions/workflows/main.yml/badge.svg)
 
 An automated flight price monitor that scans for the cheapest travel deals between **Poland/Germany** and **Kigali, Rwanda** (KGL). The bot performs calculations to find the absolute cheapest date combinations and sends alerts directly to Telegram.
 
@@ -10,7 +11,7 @@ An automated flight price monitor that scans for the cheapest travel deals betwe
 5. **Alerts:** Sends a Telegram notification with a direct **Google Flights** booking link.
 
 ## 🛠️ Tech Stack
-* **Python 3.10**: The core logic and API interaction.
+* **Python 3.10**: Core logic and API interaction.
 * **Duffel API**: Live flight data source.
 * **GitHub Actions**: Automation and scheduling.
 * **Telegram Bot API**: Instant notifications.
@@ -18,7 +19,7 @@ An automated flight price monitor that scans for the cheapest travel deals betwe
 ## ⚙️ Setup & Installation
 
 ### 1. Secrets Configuration
-To run this project, you must add the following **Secrets** to your GitHub Repository (**Settings > Secrets and variables > Actions**):
+Add the following **Secrets** to your GitHub Repository (**Settings > Secrets and variables > Actions**):
 
 | Secret | Description |
 | :--- | :--- |
@@ -27,9 +28,22 @@ To run this project, you must add the following **Secrets** to your GitHub Repos
 | `CHAT_ID` | Your numeric Telegram Chat ID |
 
 ### 2. Local Testing
-If you want to run it locally, create a `.env` file (which is ignored by Git):
+Create a `.env` file (ignored by Git) for local development:
 ```env
 DUFFEL_TOKEN=your_token_here
 TELEGRAM_TOKEN=your_bot_token
 CHAT_ID=your_id
+📅 Tracking Schedule
+Every 30 minutes (via Cron).
 
+On every Push to the mainbranch.
+
+Manually via the "Run workflow" button in the GitHub Actions tab.
+
+⚠️ Important Note on Costs
+Searching is Free: The Duffel API does not charge for searching flight offers.
+
+GitHub is Free: Stays within the 2,000-minute monthly limit for GitHub Free accounts.
+
+👤 Author
+BYAMUNGU Desire  Flight Search Automation Project - 2026
