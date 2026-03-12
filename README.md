@@ -48,6 +48,11 @@ Create a `.env` file (this file should be ignored by Git) for local development:
 DUFFEL_TOKEN=your_token_here
 TELEGRAM_TOKEN=your_bot_token
 CHAT_ID=your_id
+
+---
+
+### ⚙️ Setup & Installation
+
 📅 Tracking Schedule
 
 The tracker runs automatically:
@@ -58,13 +63,14 @@ On every push to the main branch
 
 Manually via the Run workflow button in the GitHub Actions tab
 
-⚠️ Important Note on Costs
+### ⚠️ Important Note on Costs
 
 Searching is Free: The Duffel API does not charge for searching flight offers.
 
 GitHub Actions: The workflow stays within the 2,000 free minutes per month available for GitHub Free accounts.
 
-👤 Author
+### 👤 Author
 
 BYAMUNGU Desire
+
 Flight Search Automation Project – 2026
