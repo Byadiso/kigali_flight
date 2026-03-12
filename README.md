@@ -1,3 +1,5 @@
+
+````markdown
 # ✈️ Rwanda Flight Price Tracker
 ![Flight Tracker Status](https://github.com/Byadiso/kigali_flight/actions/workflows/main.yml/badge.svg)
 
@@ -48,29 +50,28 @@ Create a `.env` file (this file should be ignored by Git) for local development:
 DUFFEL_TOKEN=your_token_here
 TELEGRAM_TOKEN=your_bot_token
 CHAT_ID=your_id
+````
 
 ---
 
-### ⚙️ Setup & Installation
-
-📅 Tracking Schedule
+## 📅 Tracking Schedule
 
 The tracker runs automatically:
 
-Every 30 minutes via Cron in GitHub Actions
+* **Every 30 minutes** via Cron in GitHub Actions
+* **On every push** to the `master` branch
+* **Manually** via the **Run workflow** button in the GitHub Actions tab
 
-On every push to the main branch
+---
 
-Manually via the Run workflow button in the GitHub Actions tab
+## ⚠️ Important Note on Costs
 
-### ⚠️ Important Note on Costs
+* **Searching is Free:** The Duffel API does not charge for searching flight offers.
+* **GitHub Actions:** The workflow stays within the **2,000 free minutes per month** available for GitHub Free accounts.
 
-Searching is Free: The Duffel API does not charge for searching flight offers.
+---
 
-GitHub Actions: The workflow stays within the 2,000 free minutes per month available for GitHub Free accounts.
+## 👤 Author
 
-### 👤 Author
-
-BYAMUNGU Desire
-
+**BYAMUNGU Desire**
 Flight Search Automation Project – 2026
